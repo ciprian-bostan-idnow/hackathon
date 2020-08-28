@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.security;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.User;
 import de.idnow.customerportal.three.repository.UserRepository;
 
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

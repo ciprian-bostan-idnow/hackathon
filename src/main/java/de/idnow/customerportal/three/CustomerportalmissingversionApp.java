@@ -22,18 +22,18 @@ import java.util.Collection;
 
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
-public class CustomerportalmissingversionApp {
+public class CustomerportalHackathonApp {
 
-    private static final Logger log = LoggerFactory.getLogger(CustomerportalmissingversionApp.class);
+    private static final Logger log = LoggerFactory.getLogger(CustomerportalHackathonApp.class);
 
     private final Environment env;
 
-    public CustomerportalmissingversionApp(Environment env) {
+    public CustomerportalHackathonApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes customerportalmissingversion.
+     * Initializes customerportalhackathon.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -58,7 +58,7 @@ public class CustomerportalmissingversionApp {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(CustomerportalmissingversionApp.class);
+        SpringApplication app = new SpringApplication(CustomerportalHackathonApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

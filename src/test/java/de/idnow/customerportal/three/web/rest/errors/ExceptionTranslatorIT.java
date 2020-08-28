@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest.errors;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @WithMockUser
 @AutoConfigureMockMvc
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 public class ExceptionTranslatorIT {
 
     @Autowired

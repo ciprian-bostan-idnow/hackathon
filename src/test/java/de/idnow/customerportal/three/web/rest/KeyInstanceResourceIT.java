@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.KeyInstance;
 import de.idnow.customerportal.three.repository.KeyInstanceRepository;
 import de.idnow.customerportal.three.service.KeyInstanceService;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link KeyInstanceResource} REST controller.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class KeyInstanceResourceIT {
@@ -144,7 +144,7 @@ public class KeyInstanceResourceIT {
             .andExpect(jsonPath("$.[*].id").value(hasItem(keyInstance.getId().intValue())))
             .andExpect(jsonPath("$.[*].value").value(hasItem(DEFAULT_VALUE)));
     }
-    
+
     @Test
     @Transactional
     public void getKeyInstance() throws Exception {

@@ -2,7 +2,7 @@ package de.idnow.customerportal.three.service;
 
 import de.idnow.customerportal.three.domain.PersistentAuditEvent;
 import de.idnow.customerportal.three.repository.PersistenceAuditEventRepository;
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired

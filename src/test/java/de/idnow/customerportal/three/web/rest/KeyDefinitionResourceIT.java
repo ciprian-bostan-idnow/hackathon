@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.KeyDefinition;
 import de.idnow.customerportal.three.repository.KeyDefinitionRepository;
 import de.idnow.customerportal.three.service.KeyDefinitionService;
@@ -26,7 +26,7 @@ import de.idnow.customerportal.three.domain.enumeration.KeyType;
 /**
  * Integration tests for the {@link KeyDefinitionResource} REST controller.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class KeyDefinitionResourceIT {
@@ -211,7 +211,7 @@ public class KeyDefinitionResourceIT {
             .andExpect(jsonPath("$.[*].isRequired").value(hasItem(DEFAULT_IS_REQUIRED.booleanValue())))
             .andExpect(jsonPath("$.[*].type").value(hasItem(DEFAULT_TYPE.toString())));
     }
-    
+
     @Test
     @Transactional
     public void getKeyDefinition() throws Exception {

@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.repository;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 
 import de.idnow.customerportal.three.config.Constants;
 import de.idnow.customerportal.three.config.audit.AuditEventConverter;
@@ -28,7 +28,7 @@ import static de.idnow.customerportal.three.repository.CustomAuditEventRepositor
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

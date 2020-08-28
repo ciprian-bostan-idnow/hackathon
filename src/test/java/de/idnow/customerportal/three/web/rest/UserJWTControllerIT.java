@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.User;
 import de.idnow.customerportal.three.repository.UserRepository;
 import de.idnow.customerportal.three.web.rest.vm.LoginVM;
@@ -27,7 +27,7 @@ import static org.hamcrest.Matchers.not;
  * Integration tests for the {@link UserJWTController} REST controller.
  */
 @AutoConfigureMockMvc
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 public class UserJWTControllerIT {
 
     @Autowired

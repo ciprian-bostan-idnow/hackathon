@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.Template;
 import de.idnow.customerportal.three.repository.TemplateRepository;
 import de.idnow.customerportal.three.service.TemplateService;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link TemplateResource} REST controller.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class TemplateResourceIT {
@@ -170,7 +170,7 @@ public class TemplateResourceIT {
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME)))
             .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION)));
     }
-    
+
     @Test
     @Transactional
     public void getTemplate() throws Exception {

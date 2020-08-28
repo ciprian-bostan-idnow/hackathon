@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.PersistentAuditEvent;
 import de.idnow.customerportal.three.repository.PersistenceAuditEventRepository;
 import de.idnow.customerportal.three.security.AuthoritiesConstants;
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @Transactional
 public class AuditResourceIT {
 

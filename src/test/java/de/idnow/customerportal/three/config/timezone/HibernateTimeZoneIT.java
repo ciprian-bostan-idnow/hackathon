@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.config.timezone;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.repository.timezone.DateTimeWrapper;
 import de.idnow.customerportal.three.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

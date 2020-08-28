@@ -2,7 +2,7 @@ package de.idnow.customerportal.three.service;
 
 import de.idnow.customerportal.three.config.Constants;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
 import org.junit.jupiter.api.BeforeEach;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 public class MailServiceIT {
 
     private static final String[] languages = {

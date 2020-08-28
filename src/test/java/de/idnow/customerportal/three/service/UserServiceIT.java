@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.service;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.config.Constants;
 import de.idnow.customerportal.three.domain.User;
 import de.idnow.customerportal.three.repository.UserRepository;
@@ -32,7 +32,7 @@ import static org.mockito.Mockito.when;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @Transactional
 public class UserServiceIT {
 

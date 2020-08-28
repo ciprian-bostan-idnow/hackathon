@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.Customer;
 import de.idnow.customerportal.three.repository.CustomerRepository;
 import de.idnow.customerportal.three.service.CustomerService;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link CustomerResource} REST controller.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class CustomerResourceIT {
@@ -170,7 +170,7 @@ public class CustomerResourceIT {
             .andExpect(jsonPath("$.[*].shortname").value(hasItem(DEFAULT_SHORTNAME)))
             .andExpect(jsonPath("$.[*].name").value(hasItem(DEFAULT_NAME)));
     }
-    
+
     @Test
     @Transactional
     public void getCustomer() throws Exception {

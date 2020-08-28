@@ -59,7 +59,7 @@ management:
 
 spring:
   application:
-    name: customerportalmissingversion
+    name: customerportalhackathon
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -97,13 +97,13 @@ spring:
     allow-bean-definition-overriding: true
   task:
     execution:
-      thread-name-prefix: customerportalmissingversion-task-
+      thread-name-prefix: customerportalhackathon-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: customerportalmissingversion-scheduling-
+      thread-name-prefix: customerportalhackathon-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -131,7 +131,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'customerportalmissingversionApp'
+    name: 'customerportalhackathonApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -141,11 +141,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: customerportalmissingversion@localhost
+    from: customerportalhackathon@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: customerportalmissingversion API
-    description: customerportalmissingversion API documentation
+    title: customerportalhackathon API
+    description: customerportalhackathon API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

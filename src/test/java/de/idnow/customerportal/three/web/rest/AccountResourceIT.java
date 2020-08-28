@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.config.Constants;
 import de.idnow.customerportal.three.domain.User;
 import de.idnow.customerportal.three.repository.AuthorityRepository;
@@ -37,7 +37,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
  */
 @AutoConfigureMockMvc
 @WithMockUser(value = TEST_USER_LOGIN)
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 public class AccountResourceIT {
     static final String TEST_USER_LOGIN = "test";
 

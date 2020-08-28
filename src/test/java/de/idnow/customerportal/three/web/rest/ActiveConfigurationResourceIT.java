@@ -1,6 +1,6 @@
 package de.idnow.customerportal.three.web.rest;
 
-import de.idnow.customerportal.three.CustomerportalmissingversionApp;
+import de.idnow.customerportal.three.customerportalhackathonApp;
 import de.idnow.customerportal.three.domain.ActiveConfiguration;
 import de.idnow.customerportal.three.repository.ActiveConfigurationRepository;
 import de.idnow.customerportal.three.service.ActiveConfigurationService;
@@ -25,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link ActiveConfigurationResource} REST controller.
  */
-@SpringBootTest(classes = CustomerportalmissingversionApp.class)
+@SpringBootTest(classes = customerportalhackathonApp.class)
 @AutoConfigureMockMvc
 @WithMockUser
 public class ActiveConfigurationResourceIT {
@@ -118,7 +118,7 @@ public class ActiveConfigurationResourceIT {
             .andExpect(content().contentType(MediaType.APPLICATION_JSON_VALUE))
             .andExpect(jsonPath("$.[*].id").value(hasItem(activeConfiguration.getId().intValue())));
     }
-    
+
     @Test
     @Transactional
     public void getActiveConfiguration() throws Exception {
