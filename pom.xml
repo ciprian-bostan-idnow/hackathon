@@ -17,6 +17,16 @@
         <!-- jhipster-needle-maven-plugin-repository -->
     </pluginRepositories>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>https://docker.dev.idnow.de:443/artifactory/maven-local</url>
+        </snapshotRepository>
+        <repository>
+            <id>docker.dev.idnow.de-releases</id>
+            <url>https://docker.dev.idnow.de:443/artifactory/maven-local</url>
+        </repository>
+    </distributionManagement>
     <!-- jhipster-needle-distribution-management -->
 
     <properties>
