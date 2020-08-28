@@ -48,6 +48,11 @@ public class CacheConfiguration {
             createCache(cm, de.idnow.customerportal.three.domain.User.class.getName());
             createCache(cm, de.idnow.customerportal.three.domain.Authority.class.getName());
             createCache(cm, de.idnow.customerportal.three.domain.User.class.getName() + ".authorities");
+            createCache(cm, de.idnow.customerportal.three.domain.Customer.class.getName());
+            createCache(cm, de.idnow.customerportal.three.domain.Template.class.getName());
+            createCache(cm, de.idnow.customerportal.three.domain.KeyDefinition.class.getName());
+            createCache(cm, de.idnow.customerportal.three.domain.KeyInstance.class.getName());
+            createCache(cm, de.idnow.customerportal.three.domain.ActiveConfiguration.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

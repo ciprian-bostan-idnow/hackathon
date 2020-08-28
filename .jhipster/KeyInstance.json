@@ -1,0 +1,46 @@
+{
+  "name": "KeyInstance",
+  "fields": [
+    {
+      "fieldName": "value",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "keyDefinition",
+      "otherEntityRelationshipName": "keyInstance",
+      "relationshipName": "definition",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "keyInstance",
+      "relationshipName": "customer",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "template",
+      "otherEntityRelationshipName": "keyInstance",
+      "relationshipName": "template",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200828095859",
+  "entityTableName": "key_instance",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

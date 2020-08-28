@@ -1,0 +1,71 @@
+entity Customer {
+	shortname String required
+    name String required   
+}
+
+entity Template {
+	name String required
+    description String required
+}
+
+entity KeyDefinition {
+	key String required
+    description String required
+    defaultValue String
+    isRequired Boolean
+    type KeyType required
+}
+
+entity KeyInstance {
+	value String required
+}
+
+//entity CustomerConfiguration {
+  //  customer Customer
+  //  configurationKey KeyInstance
+//}
+
+//entity TemplateConfiguration {
+  //  template Template
+    //configurationKey KeyInstance
+//}
+
+enum KeyType {
+	STRING,
+    BOOLEAN,
+    NUMBER,
+    ARRAY,
+    OBJECT
+}
+ 
+entity ActiveConfiguration {
+	
+}
+
+//relationship ManyToMany {
+	//Customer{task(title)} to Template{id}
+//}
+
+//relationship OneToOne {
+	//Customer to CustomerConfiguration
+    //CustomerConfiguration to KeyInstance
+    //Template to TemplateConfiguration
+    //TemplateConfiguration to KeyInstance
+//}
+
+relationship ManyToOne {
+    KeyInstance{definition} to KeyDefinition
+    KeyInstance{customer} to Customer
+    KeyInstance{template} to Template
+}
+
+// Set pagination options
+paginate KeyDefinition, Customer with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl 
+// Set an angular suffix
+// angularSuffix * with mySuffix
