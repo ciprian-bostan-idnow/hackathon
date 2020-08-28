@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.idnow.customerportal.three",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "monolith",
+    "baseName": "customerportalmissingversion",
+    "packageName": "de.idnow.customerportal.three",
+    "packageFolder": "de/idnow/customerportal/three",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YjM4ODcwOWM3OTJiODk0NmZjMDg1NzM2YjI0MGEzNGEyN2JjMzE3ZDUxNjA3YTBlYmQwOGU2ODdlNDg4ZmI0MGNjYmYyNzgwY2EyMGI2NzQxYjA3ZmYxNjE3YjIyYmQwZGJlNzQ3MzQ5ZTlmNzZmNDE0ZmRiMDdjZTBmYzdlYzA=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1598598081200,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "fr", "de"],
+    "blueprints": []
+  }
+}
